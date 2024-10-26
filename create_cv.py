@@ -136,7 +136,22 @@ def save_cv_as_pdf(cv_content, filename):
     pdf.output(filename)
 
 # Generate CVs button
+import glob
+
+def delete_old_pdfs():
+    """
+    Function to delete all old PDF files in the current working directory
+    """
+    old_pdfs = glob.glob("*.pdf")
+    for pdf in old_pdfs:
+        try:
+            os.remove(pdf)
+        except Exception as e:
+            st.warning(f"Could not delete {pdf}: {e}")
+
 if st.button("✨ Generate Random CVs"):
+    # Delete old PDF files before generating new ones
+    delete_old_pdfs()
     if job_role:
         with st.spinner('⏳ Generating CVs, please wait...'):
             generated_cvs = []
