@@ -77,16 +77,18 @@ def generate_cvs_batch(roles, names, emails, phone_numbers, locations, experienc
         for role, name, email, phone_number, location, experience_level in zip(roles, names, emails, phone_numbers, locations, experience_levels)
     ]
 
-    # Use the OpenAI batch API to generate multiple completions
-    try:
-        responses = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=messages,
-            batch_size=len(messages)
-        )
-        return [response.choices[0].message.content for response in responses]
-    except Exception as e:
-        return [f"Error generating CV: {e}"] * len(messages)
+    # Generate each CV sequentially
+    responses = []
+    for message in messages:
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[message],
+            )
+            responses.append(response.choices[0].message["content"])
+        except Exception as e:
+            responses.append(f"Error generating CV: {e}")
+    return responses
 
 def save_cv_as_pdf(cv_content, filename):
     """
