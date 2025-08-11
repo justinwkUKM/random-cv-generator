@@ -27,7 +27,7 @@ The Random CV Generator uses artificial intelligence to create comprehensive, re
 
 The application supports 60+ predefined job roles across various industries:
 
-**Technology**: Software Engineer, Data Scientist, DevOps Engineer, Full Stack Developer, Backend Developer, Frontend Developer, Cloud Architect, Machine Learning Engineer, AI Researcher, Cybersecurity Specialist, Network Administrator, IT Support Specialist, Systems Analyst, Database Administrator, Quality Assurance Tester
+**Technology**: Software Engineer, Data Scientist, Security Data Scientist, DevOps Engineer, Full Stack Developer, Backend Developer, Frontend Developer, Cloud Architect, Machine Learning Engineer, AI Researcher, Cybersecurity Specialist, Network Administrator, IT Support Specialist, Systems Analyst, Database Administrator, Quality Assurance Tester
 
 **Business & Management**: Product Manager, Project Coordinator, Business Analyst, Operations Manager, Supply Chain Manager, Procurement Specialist, Warehouse Manager, Retail Store Manager
 
