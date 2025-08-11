@@ -44,7 +44,7 @@ num_cvs = st.number_input("📄 Enter the number of CVs to generate:", min_value
 
 # List of common job roles to choose from
 job_roles = [
-    "Software Engineer", "Data Scientist", "Product Manager", "Project Coordinator", "Marketing Specialist",
+    "Software Engineer", "Data Scientist", "Security Data Scientist", "Product Manager", "Project Coordinator", "Marketing Specialist",
     "Sales Executive", "Financial Analyst", "Human Resources Manager", "Graphic Designer", "Content Writer",
     "Customer Service Representative", "Business Analyst", "Accountant", "UX/UI Designer", "Network Administrator",
     "IT Support Specialist", "Operations Manager", "Administrative Assistant", "Legal Advisor", "Quality Assurance Tester",
