@@ -55,7 +55,7 @@ job_roles = [
     "SEO Specialist", "Content Strategist", "Social Media Manager", "Public Relations Specialist", "Event Planner",
     "Supply Chain Manager", "Procurement Specialist", "Warehouse Manager", "Retail Store Manager", "Fitness Trainer",
     "Nutritionist", "Psychologist", "Teacher", "School Principal", "Professor", "Research Scientist", "Lab Technician",
-    "Nurse", "Doctor", "Paramedic", "Pharmacist", "Veterinarian"
+    "Nurse", "Doctor", "Paramedic", "Pharmacist", "Veterinarian", "Pilot", "Chef",
 ]
 job_role = st.selectbox("💼 Select the job role:", job_roles)
 
